@@ -1,38 +1,145 @@
+main {
+  background-color: black;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.canvas {
+  background-color: black;
+  height: 500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page {
+  background-color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  /* font-family: 'Kanit', sans-serif; */
+  /* font-family: 'Zen Dots', cursive; */
+  font-family: 'Gruppo', cursive;
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  position: relative;
+  margin: 4px;
+  padding: 0;
+}
+
+#home-title {
+  margin-top: 15px;
+}
+
+#title {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+#title2 {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 22px;
+  color: white;
+  position: relative;
+  margin: 12px;
+  padding: 0;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 800;
+  /* font-family: 'Kanit', sans-serif; */
+  /* font-family: 'Zen Dots', cursive; */
+}
+
+li {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+a {
+  font-size: large;
+  font-weight: 900;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 0px 8px;
+  padding: 8px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.box {
+  background-color: #6faac3;
+  padding: 20px;
+  border: 10px solid white;
+  border-radius: 40px;
+  margin-top: 20px;
+}
+
+.project {
+  background-color: #6faac3;
+  padding: 20px;
+  border: 10px solid white;
+  border-radius: 40px;
+  margin-top: 20px;
+}
+
+.img {
+  height: 42px;
+}
+
+.skill-label {
+  font-size: 24;
+  text-align: 'center';
+  margin: 20px 60px;
+}
+
+.skills {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* font-family: 'Gruppo', cursive;
+font-family: 'Kanit', sans-serif;
+font-family: 'Zen Dots', cursive; */
