@@ -13,8 +13,6 @@ import {
   MeshBasicMaterial,
   TextureLoader,
   PlaneGeometry,
-  Vector3,
-  CylinderGeometry,
 } from 'three';
 
 import '../App.css';
