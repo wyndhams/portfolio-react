@@ -28,7 +28,7 @@ const Projects = () => {
             target='_blank'
             rel='noreferrer'
           >
-            Backend Repo
+            GitHub Repo
           </a>
           <br />
           <p>
@@ -61,7 +61,7 @@ const Projects = () => {
             target='_blank'
             rel='noreferrer'
           >
-            Backend Repo
+            GitHub Repo
           </a>
           <br />
 
