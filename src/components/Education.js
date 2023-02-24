@@ -11,7 +11,7 @@ const Education = () => {
             Software Engineering Immersive Course, Computer Software Engineering
           </h4>
           <h5>October 2022 - February 2023</h5>
-          <p>
+          {/* <p>
             The course was conducted over Zoom with 37.5 contact hours and 25+
             hours of additional working time per week. The initial weeks of the
             course built upon my knowledge of HTML, CSS and JavaScript which
@@ -21,7 +21,7 @@ const Education = () => {
             stack and also developed using Python/Django REST Framework and
             PostgreSQL. I took part in daily standups to discuss issues and plan
             work for the forthcoming day/week.
-          </p>
+          </p> */}
           <p>
             Frontend: Bulma, Chrome Dev Tools, CSS, HTML, JavaScript, Material
             UI, React, Sass, SCSS <br /> Backend: Django, Express, MongoDB,
@@ -42,13 +42,13 @@ const Education = () => {
             work for the forthcoming day/week.
           </p>
           <h5>Skills</h5>
-          <p>
-            Responsive Web Design · Postman API · npm · Netlify · Heroku ·
+          {/* <p>
+            Responsive Web Design | Postman API | npm | Netlify · Heroku ·
             Cloudinary · SASS · Material-UI · PostgreSQL · Node.js · Mongoose
             ODM · MongoDB · Express.js · Cascading Style Sheets (CSS) · HTML ·
             Django REST Framework · Django · Python (Programming Language) ·
             React.js · JavaScript
-          </p>
+          </p> */}
         </div>
         <div className='project'>
           <h2 id='title2'>Cardiff University</h2>
@@ -61,7 +61,7 @@ const Education = () => {
             Activities and societies: Cardiff University Xpress Radio Friday
             Night Presenter, Intramural 11-a-side Football
           </p>
-          <p>
+          {/* <p>
             4th Year Modules: Alternative Energy Systems; Coastal and Estuarine
             Engineering; Contaminated Land Design; Environmental Modelling;
             Industrial Practice; Management in Industry; Professional
@@ -73,7 +73,7 @@ const Education = () => {
             Continuum Solid Mechanics; Environmental Geotechnics; Environmental
             Law; Geotechnical Engineering; Dissertation; Structural Design
             Studies; Water Engineering
-          </p>
+          </p> */}
           <h5>Programming Skills</h5>
           <p>C++, MATLAB</p>
         </div>
@@ -86,9 +86,7 @@ const Education = () => {
           <h5>2003 - 2010</h5>
           <p>
             Activities and societies: House Captain and Senior Prefect involved
-            with Football, Music and Charity FundraisingActivities and
-            societies: House Captain and Senior Prefect involved with Football,
-            Music and Charity Fundraising
+            with Football, Music and Charity Fundraising.
           </p>
           <p>A Levels: Geography, Mathematics, Physics</p>
           <p>AS Level: Art & Design</p>

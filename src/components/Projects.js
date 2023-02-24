@@ -27,13 +27,6 @@ const Projects = () => {
             Backend Repo
           </a>
           <br />
-          <a
-            href='https://github.com/wyndhams/ga-project-4-frontend'
-            target='_blank'
-            rel='noreferrer'
-          >
-            Frontend Repo
-          </a>
           <p>
             Festi is a full-stack application designed to help users search for
             new music festivals for summer months. This is the first project
@@ -67,13 +60,6 @@ const Projects = () => {
           </a>
           <br />
 
-          <a
-            href='https://github.com/wyndhams/ga-project-3-frontend'
-            target='_blank'
-            rel='noreferrer'
-          >
-            Frontend Repo
-          </a>
           <p>
             Full Stacked is a fitness web application that allows users to
             navigate a database of workouts, view information about them and
