@@ -41,7 +41,7 @@ const Education = () => {
             PostgreSQL. I took part in daily standups to discuss issues and plan
             work for the forthcoming day/week.
           </p>
-          <h5>Skills</h5>
+          {/* <h5>Skills</h5> */}
           {/* <p>
             Responsive Web Design | Postman API | npm | Netlify · Heroku ·
             Cloudinary · SASS · Material-UI · PostgreSQL · Node.js · Mongoose
