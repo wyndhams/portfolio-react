@@ -126,6 +126,13 @@ a {
   height: 42px;
 }
 
+.project-image {
+  border: 5px solid white;
+  border-radius: 20px;
+  width: 40vw;
+  margin-top: 20px;
+}
+
 .skill-label {
   font-size: 24;
   text-align: 'center';

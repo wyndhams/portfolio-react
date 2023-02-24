@@ -1,4 +1,8 @@
 import React from 'react';
+import Festi from '../assets/festi.png';
+import FullStacked from '../assets/full-stacked.png';
+import SongYear from '../assets/song-year.png';
+import BassInvaders from '../assets/bass-invaders.png';
 
 const Projects = () => {
   return (
@@ -36,6 +40,7 @@ const Projects = () => {
           </p>
           {/* <img src="" alt="" /> */}
         </div>
+        <img src={Festi} alt='Festi Web App' className='project-image' />
         <div className='project'>
           <h2 id='title2'>Full Stacked App</h2>
           <h4>
@@ -70,6 +75,11 @@ const Projects = () => {
           </p>
           {/* <img src="" alt="" /> */}
         </div>
+        <img
+          src={FullStacked}
+          alt='Full Stacked Web App'
+          className='project-image'
+        />
         <div className='project'>
           <h2 id='title2'>React AJAX Request App</h2>
           <h4>
@@ -102,6 +112,7 @@ const Projects = () => {
           </p>
           {/* <img src="" alt="" /> */}
         </div>
+        <img src={SongYear} alt='Song Year Web App' className='project-image' />
         <div className='project'>
           <h2 id='title2'>Bass Invaders</h2>
           <h4>Timeframe: 1 week | Solo | Languages: HTML, CSS, JavaScript</h4>
@@ -129,6 +140,11 @@ const Projects = () => {
           </p>
           {/* <img src="" alt="" /> */}
         </div>
+        <img
+          src={BassInvaders}
+          alt='Bass Invaders Web Game'
+          className='project-image'
+        />
       </div>
     </>
   );
