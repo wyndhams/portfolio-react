@@ -9,7 +9,8 @@ import Experience from './components/Experience';
 import Interests from './components/Interests';
 import Contact from './components/Contact';
 
-import './App.css';
+import './styles/App.css';
+import './styles/Scrollbar.css';
 import Education from './components/Education';
 
 function App() {

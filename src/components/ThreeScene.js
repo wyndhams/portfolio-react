@@ -15,7 +15,7 @@ import {
   PlaneGeometry,
 } from 'three';
 
-import '../App.css';
+import '../styles/App.css';
 import GitHubLogo from '../assets/github-logo.png';
 import LinkedInLogo from '../assets/linkedin-logo.png';
 
@@ -262,7 +262,7 @@ const handleArrowClick = () => {
 export default function ThreeScene() {
   return (
     <>
-      <Canvas className='canvas' style={{ height: '1000px' }}>
+      <Canvas className='canvas' style={{ height: '100vh' }}>
         <Camera />
         <ambientLight intensity={0.5} />
         <pointLight position={[0, 0, 5]} />
@@ -277,7 +277,7 @@ export default function ThreeScene() {
         style={{
           color: 'black',
           position: 'absolute',
-          top: '3.5%',
+          top: 0,
           left: 0,
           width: '100%',
           height: '100%',
@@ -286,7 +286,6 @@ export default function ThreeScene() {
           justifyContent: 'center',
           alignItems: 'center',
           zindex: 1,
-          textshadow: '2px 2px #000',
         }}
       >
         <div className='logo'>

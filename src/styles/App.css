@@ -11,10 +11,6 @@ main {
   height: 500px;
 }
 
-.page {
-  background-color: black;
-}
-
 body {
   /* font-family: 'Kanit', sans-serif; */
   /* font-family: 'Zen Dots', cursive; */
@@ -92,7 +88,6 @@ a {
   padding: 8px;
   height: 50px;
   display: flex;
-  justify-content: center;
 }
 
 .body {
