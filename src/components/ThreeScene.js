@@ -288,7 +288,7 @@ export default function ThreeScene() {
           zindex: 1,
         }}
       >
-        <div className='logo'>
+        <div className='logo-wrapper'>
           <a
             href='https://github.com/wyndhams'
             target='_blank'

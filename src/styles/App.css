@@ -19,6 +19,9 @@ body {
 }
 
 h1 {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  font-style: italic;
   color: white;
   position: relative;
   margin: 4px;
@@ -26,7 +29,7 @@ h1 {
 }
 
 #home-title {
-  margin-top: 15px;
+  margin-top: 8px;
 }
 
 #title {
@@ -44,10 +47,11 @@ h1 {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 20px;
+  font-style: oblique;
   color: white;
   position: relative;
-  margin: 12px;
+  margin: -5px;
   padding: 0;
 }
 
@@ -83,11 +87,24 @@ a {
   justify-content: space-between;
 }
 
-.logo {
-  margin: 0px 8px;
-  padding: 8px;
-  height: 50px;
+.logo-wrapper {
   display: flex;
+  margin-top: -1.5vh;
+}
+
+.logo {
+  margin: -2px 8px;
+  padding: 6px;
+  height: 32px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100px;
+  transition: background-color 0.2s ease-out 100ms;
+  transition: box-shadow 0.2s ease-out 100ms;
+}
+
+.logo:hover {
+  background-color: rgb(214, 221, 255);
+  box-shadow: 2px 1px black;
 }
 
 .body {
