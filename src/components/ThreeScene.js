@@ -76,7 +76,7 @@ function LogoPlanet() {
     }
   });
 
-  const logoPlanetGeometry = new SphereGeometry(1, 32, 32);
+  const logoPlanetGeometry = new SphereGeometry(1.08, 32, 32);
   const logoPlanetMaterial = new MeshPhongMaterial({
     color: 0x64a8d3,
     shininess: 50,
@@ -101,7 +101,7 @@ function Planet() {
     }
   });
 
-  const planetGeometry = new SphereGeometry(1.2, 32, 32);
+  const planetGeometry = new SphereGeometry(1.3, 32, 32);
   const planetMaterial = new MeshPhongMaterial({
     color: 0x64a8d3,
     shininess: 50,
@@ -111,6 +111,25 @@ function Planet() {
   return (
     <mesh ref={planetRef} geometry={planetGeometry} material={planetMaterial} />
   );
+}
+
+function PlanetGlow() {
+  const glowRef = useRef();
+
+  useFrame(() => {
+    if (glowRef.current) {
+      glowRef.current.rotation.y += 0.1;
+    }
+  });
+
+  const glowGeometry = new SphereGeometry(1.65, 32, 32);
+  const glowMaterial = new MeshPhongMaterial({
+    color: 0x64a8d3,
+    shininess: 50,
+    transparent: true,
+    opacity: 0.3,
+  });
+  return <mesh ref={glowRef} geometry={glowGeometry} material={glowMaterial} />;
 }
 
 function FadedPlanetGlow() {
@@ -137,26 +156,6 @@ function FadedPlanetGlow() {
     />
   );
 }
-
-function PlanetGlow() {
-  const glowRef = useRef();
-
-  useFrame(() => {
-    if (glowRef.current) {
-      glowRef.current.rotation.y += 0.1;
-    }
-  });
-
-  const glowGeometry = new SphereGeometry(1.5, 32, 32);
-  const glowMaterial = new MeshPhongMaterial({
-    color: 0x64a8d3,
-    shininess: 50,
-    transparent: true,
-    opacity: 0.3,
-  });
-  return <mesh ref={glowRef} geometry={glowGeometry} material={glowMaterial} />;
-}
-
 class Logo extends Group {
   constructor({ position, imageSrc, url }) {
     super();
