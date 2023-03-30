@@ -8,11 +8,6 @@ import {
   MeshPhongMaterial,
   BufferGeometry,
   BufferAttribute,
-  Group,
-  Mesh,
-  MeshBasicMaterial,
-  TextureLoader,
-  PlaneGeometry,
 } from 'three';
 
 import '../styles/App.css';
@@ -67,6 +62,67 @@ function StarryBackground() {
   );
 }
 
+function RedPlanet() {
+  const fadedGlowRef = useRef();
+
+  useFrame(() => {
+    if (fadedGlowRef.current) {
+      fadedGlowRef.current.rotation.y += 0.1;
+    }
+  });
+
+  const fadedGlowGeometry = new SphereGeometry(0.3, 32, 32);
+  const fadedGlowMaterial = new MeshPhongMaterial({
+    color: 0xffb2b2,
+    shininess: 50,
+    transparent: true,
+    opacity: 1,
+  });
+
+  const x = 3;
+  const y = 1;
+  const z = 0;
+
+  return (
+    <mesh
+      ref={fadedGlowRef}
+      geometry={fadedGlowGeometry}
+      material={fadedGlowMaterial}
+      position={[x, y, z]}
+    />
+  );
+}
+function YellowPlanet() {
+  const fadedGlowRef = useRef();
+
+  useFrame(() => {
+    if (fadedGlowRef.current) {
+      fadedGlowRef.current.rotation.y += 0.1;
+    }
+  });
+
+  const fadedGlowGeometry = new SphereGeometry(0.3, 32, 32);
+  const fadedGlowMaterial = new MeshPhongMaterial({
+    color: 0xffe599,
+    shininess: 50,
+    transparent: true,
+    opacity: 1,
+  });
+
+  const x = -3;
+  const y = -1;
+  const z = 0;
+
+  return (
+    <mesh
+      ref={fadedGlowRef}
+      geometry={fadedGlowGeometry}
+      material={fadedGlowMaterial}
+      position={[x, y, z]}
+    />
+  );
+}
+
 function LogoPlanet() {
   const logoPlanetRef = useRef();
 
@@ -81,7 +137,7 @@ function LogoPlanet() {
     color: 0x64a8d3,
     shininess: 50,
     transparent: true,
-    opacity: 1,
+    opacity: 0.5,
   });
   return (
     <mesh
@@ -156,76 +212,6 @@ function FadedPlanetGlow() {
     />
   );
 }
-class Logo extends Group {
-  constructor({ position, imageSrc, url }) {
-    super();
-
-    // Load the image using TextureLoader
-    const texture = new TextureLoader().load(imageSrc);
-
-    // Create a plane geometry to represent the logo
-    const geometry = new PlaneGeometry(4, 4);
-    const material = new MeshBasicMaterial({ map: texture });
-    const mesh = new Mesh(geometry, material);
-
-    // Set the position of the logo
-    mesh.position.set(position.x, position.y, position.z);
-
-    // Add the mesh to the group
-    this.add(mesh);
-
-    // Add a click event listener to the logo that opens the provided url in a new tab
-    mesh.addEventListener('click', () => {
-      window.open(url, '_blank');
-    });
-  }
-}
-
-function LogoOrbit({ position, radius, speed, children }) {
-  const ref = useRef();
-
-  useFrame(({ clock }) => {
-    const angle = (clock.getElapsedTime() * speed) % (2 * Math.PI);
-    const x = radius * Math.sin(angle);
-    const z = radius * Math.cos(angle);
-
-    if (ref.current) {
-      ref.current.position.set(x, 0, z);
-    }
-  });
-
-  return (
-    <group ref={ref} position={position}>
-      {children}
-    </group>
-  );
-}
-
-function Logos() {
-  const logos = [
-    {
-      imageSrc: '../assets/linkedin-logo.png',
-      url: 'https://www.linkedin.com/in/wyndham-roy/',
-    },
-    {
-      imageSrc: '../assets/github-logo.png',
-      url: 'https://github.com/wyndhams',
-    },
-  ];
-
-  return (
-    <>
-      {logos.map((logo, i) => (
-        <LogoOrbit
-          key={i}
-          logo={<Logo imageSrc={logo.imageSrc} url={logo.url} />}
-          radius={50}
-          speed={0.01 * (i + 1)}
-        />
-      ))}
-    </>
-  );
-}
 
 function Arrow({ onClick }) {
   const arrowStyle = {
@@ -266,11 +252,12 @@ export default function ThreeScene() {
         <ambientLight intensity={0.5} />
         <pointLight position={[0, 0, 5]} />
         <StarryBackground />
+        <RedPlanet />
+        <YellowPlanet />
         <LogoPlanet />
         <Planet />
         <PlanetGlow />
         <FadedPlanetGlow />
-        <Logos />
       </Canvas>
       <div
         style={{
@@ -293,14 +280,14 @@ export default function ThreeScene() {
             target='_blank'
             rel='noreferrer'
           >
-            <img src={GitHubLogo} alt='GitHub Icon' className='logo' />
+            <img src={GitHubLogo} alt='GitHub Icon' className='logo-home' />
           </a>
           <a
             href='https://www.linkedin.com/in/wyndham-roy/'
             target='_blank'
             rel='noreferrer'
           >
-            <img src={LinkedInLogo} alt='LinkedIn Icon' className='logo' />
+            <img src={LinkedInLogo} alt='LinkedIn Icon' className='logo-home' />
           </a>
         </div>
         <h1 id='home-title'>Wyndham Roy</h1>
