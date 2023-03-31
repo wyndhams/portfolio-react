@@ -12,7 +12,7 @@ const Projects = () => {
         <div className='project'>
           <h2 id='title2'>Festi App</h2>
           <h4>
-            Timeframe: 1 Week | Solo Projct | Python, Django, PostgreSQL, React,
+            Timeframe: 1 Week | Solo | Python, Django, PostgreSQL, React,
             Material UI, CSS
           </h4>
           <a
@@ -41,6 +41,38 @@ const Projects = () => {
           {/* <img src="" alt="" /> */}
         </div>
         <img src={Festi} alt='Festi Web App' className='project-image' />
+        <div className='project'>
+          <h2 id='title2'>Bass Invaders</h2>
+          <h4>Timeframe: 1 week | Solo | Languages: HTML, CSS, JavaScript</h4>
+          <a
+            href='https://wyndhams.github.io/ga-project-1/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Deployed Site
+          </a>
+          <br />
+
+          <a
+            href='https://github.com/wyndhams/ga-project-1'
+            target='_blank'
+            rel='noreferrer'
+          >
+            GitHub Repo
+          </a>
+          <p>
+            I developed my own version of the classic game Space Invaders using
+            strictly vanilla HTML, CSS and JavaScript. I had a lot of fun
+            implementing logic in this project to increase difficulty through
+            levels of the game.
+          </p>
+          {/* <img src="" alt="" /> */}
+        </div>
+        <img
+          src={BassInvaders}
+          alt='Bass Invaders Web Game'
+          className='project-image'
+        />
         <div className='project'>
           <h2 id='title2'>Full Stacked App</h2>
           <h4>
@@ -83,7 +115,7 @@ const Projects = () => {
         <div className='project'>
           <h2 id='title2'>React AJAX Request App</h2>
           <h4>
-            Timeframe: 4 days | Team of 2 | Languages: React, Material UI, CSS
+            Timeframe: 3 days | Team of 2 | Languages: React, Material UI, CSS
           </h4>
           <a
             href='https://wyndhams-ga-project-2.netlify.app/'
@@ -113,38 +145,6 @@ const Projects = () => {
           {/* <img src="" alt="" /> */}
         </div>
         <img src={SongYear} alt='Song Year Web App' className='project-image' />
-        <div className='project'>
-          <h2 id='title2'>Bass Invaders</h2>
-          <h4>Timeframe: 1 week | Solo | Languages: HTML, CSS, JavaScript</h4>
-          <a
-            href='https://wyndhams.github.io/ga-project-1/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            Deployed Site
-          </a>
-          <br />
-
-          <a
-            href='https://github.com/wyndhams/ga-project-1'
-            target='_blank'
-            rel='noreferrer'
-          >
-            GitHub Repo
-          </a>
-          <p>
-            I developed my own version of the classic game Space Invaders using
-            strictly vanilla HTML, CSS and JavaScript. I had a lot of fun
-            implementing logic in this project to increase difficulty through
-            levels of the game.
-          </p>
-          {/* <img src="" alt="" /> */}
-        </div>
-        <img
-          src={BassInvaders}
-          alt='Bass Invaders Web Game'
-          className='project-image'
-        />
       </div>
     </>
   );
