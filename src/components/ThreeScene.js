@@ -2,17 +2,48 @@ import React, { useRef } from 'react';
 
 import { useFrame, extend, Canvas } from 'react-three-fiber';
 import {
-  PointsMaterial,
+  SpriteMaterial,
   Points,
   SphereGeometry,
   MeshPhongMaterial,
   BufferGeometry,
   BufferAttribute,
+  TextureLoader,
 } from 'three';
 
 import '../styles/App.css';
 import GitHubLogo from '../assets/github-logo.png';
 import LinkedInLogo from '../assets/linkedin-logo.png';
+
+import star1 from '../assets/html.png';
+import star2 from '../assets/css.png';
+import star3 from '../assets/sass.png';
+import star4 from '../assets/bulma.png';
+import star5 from '../assets/mui.png';
+import star6 from '../assets/javascript.png';
+import star7 from '../assets/react.png';
+import star8 from '../assets/three.png';
+import star9 from '../assets/vue.png';
+import star10 from '../assets/cloudinary.png';
+
+import star11 from '../assets/express.png';
+import star12 from '../assets/json.png';
+import star13 from '../assets/mongodb.png';
+import star14 from '../assets/mongoose.png';
+import star15 from '../assets/node.png';
+import star16 from '../assets/django.png';
+import star17 from '../assets/python.png';
+import star18 from '../assets/npm.png';
+import star19 from '../assets/postgresql.png';
+import star20 from '../assets/postman.png';
+import star21 from '../assets/tableplus.png';
+
+import star22 from '../assets/git.png';
+import star23 from '../assets/github.png';
+import star24 from '../assets/trello.png';
+import star25 from '../assets/slack.png';
+import star26 from '../assets/netlify.png';
+import star27 from '../assets/heroku.png';
 
 extend({ Points });
 
@@ -34,6 +65,35 @@ function Camera() {
 function StarryBackground() {
   const starRef = useRef();
   const numStars = 10000;
+  const starImages = [
+    star1,
+    star2,
+    star3,
+    star4,
+    star5,
+    star6,
+    star7,
+    star8,
+    star9,
+    star10,
+    star11,
+    star12,
+    star13,
+    star14,
+    star15,
+    star16,
+    star17,
+    star18,
+    star19,
+    star20,
+    star21,
+    star22,
+    star23,
+    star24,
+    star25,
+    star26,
+    star27,
+  ];
 
   useFrame(() => {
     if (starRef.current) {
@@ -43,22 +103,41 @@ function StarryBackground() {
 
   const starGeometry = new BufferGeometry();
   const positions = new Float32Array(numStars * 3);
+  const starMaterials = [];
 
   for (let i = 0; i < numStars; i++) {
     const x = Math.random() * 600 - 300;
     const y = Math.random() * 600 - 300;
-    const z = Math.random() * 600 - 300;
+    const z = Math.random() * 600 - 400;
     positions[i * 3] = x;
     positions[i * 3 + 1] = y;
     positions[i * 3 + 2] = z;
+    const randomIndex = Math.floor(Math.random() * starImages.length);
+    const starMaterial = new SpriteMaterial({
+      map: new TextureLoader().load(starImages[randomIndex]),
+      size: 10,
+      color: 0xffffff,
+      transparent: true,
+    });
+    starMaterials.push(starMaterial);
   }
 
   starGeometry.setAttribute('position', new BufferAttribute(positions, 3));
 
-  const starMaterial = new PointsMaterial({ color: 0xffffff });
-
   return (
-    <points ref={starRef} geometry={starGeometry} material={starMaterial} />
+    <group ref={starRef}>
+      {starMaterials.map((material, i) => (
+        <sprite
+          key={i}
+          position={[
+            positions[i * 3],
+            positions[i * 3 + 1],
+            positions[i * 3 + 2],
+          ]}
+          material={material}
+        />
+      ))}
+    </group>
   );
 }
 
@@ -79,7 +158,7 @@ function RedPlanet() {
     opacity: 1,
   });
 
-  const x = 3;
+  const x = 3.5;
   const y = 1;
   const z = 0;
 
@@ -92,6 +171,38 @@ function RedPlanet() {
     />
   );
 }
+
+function RedPlanetGlow() {
+  const fadedGlowRef = useRef();
+
+  useFrame(() => {
+    if (fadedGlowRef.current) {
+      fadedGlowRef.current.rotation.y += 0.1;
+    }
+  });
+
+  const fadedGlowGeometry = new SphereGeometry(0.5, 32, 32);
+  const fadedGlowMaterial = new MeshPhongMaterial({
+    color: 0xffb2b2,
+    shininess: 50,
+    transparent: true,
+    opacity: 0.15,
+  });
+
+  const x = 3.5;
+  const y = 1;
+  const z = 0;
+
+  return (
+    <mesh
+      ref={fadedGlowRef}
+      geometry={fadedGlowGeometry}
+      material={fadedGlowMaterial}
+      position={[x, y, z]}
+    />
+  );
+}
+
 function YellowPlanet() {
   const fadedGlowRef = useRef();
 
@@ -109,7 +220,38 @@ function YellowPlanet() {
     opacity: 1,
   });
 
-  const x = -3;
+  const x = -3.5;
+  const y = -1;
+  const z = 0;
+
+  return (
+    <mesh
+      ref={fadedGlowRef}
+      geometry={fadedGlowGeometry}
+      material={fadedGlowMaterial}
+      position={[x, y, z]}
+    />
+  );
+}
+
+function YellowPlanetGlow() {
+  const fadedGlowRef = useRef();
+
+  useFrame(() => {
+    if (fadedGlowRef.current) {
+      fadedGlowRef.current.rotation.y += 0.1;
+    }
+  });
+
+  const fadedGlowGeometry = new SphereGeometry(0.5, 32, 32);
+  const fadedGlowMaterial = new MeshPhongMaterial({
+    color: 0xffe599,
+    shininess: 50,
+    transparent: true,
+    opacity: 0.15,
+  });
+
+  const x = -3.5;
   const y = -1;
   const z = 0;
 
@@ -253,7 +395,9 @@ export default function ThreeScene() {
         <pointLight position={[0, 0, 5]} />
         <StarryBackground />
         <RedPlanet />
+        <RedPlanetGlow />
         <YellowPlanet />
+        <YellowPlanetGlow />
         <LogoPlanet />
         <Planet />
         <PlanetGlow />
