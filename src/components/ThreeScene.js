@@ -64,7 +64,7 @@ function Camera() {
 
 function StarryBackground() {
   const starRef = useRef();
-  const numStars = 10000;
+  const numStars = 8000;
   const starImages = [
     star1,
     star2,
@@ -106,9 +106,9 @@ function StarryBackground() {
   const starMaterials = [];
 
   for (let i = 0; i < numStars; i++) {
-    const x = Math.random() * 600 - 300;
-    const y = Math.random() * 600 - 300;
-    const z = Math.random() * 600 - 400;
+    const x = Math.random() * 500 - 300;
+    const y = Math.random() * 500 - 300;
+    const z = Math.random() * 500 - 300;
     positions[i * 3] = x;
     positions[i * 3 + 1] = y;
     positions[i * 3 + 2] = z;
