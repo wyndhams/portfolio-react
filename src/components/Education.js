@@ -79,17 +79,13 @@ const Education = () => {
         </div>
         <div className='project'>
           <h2 id='title2'>St. Bartholomew's School</h2>
-          <h4>
-            First Class Honours, Master of Engineering (MEng), Civil and
-            Environmental Engineering
-          </h4>
+          <h4>A Levels: Geography, Mathematics, Physics</h4>
+          <h4>AS Level: Art & Design</h4>
           <h5>2003 - 2010</h5>
           <p>
             Activities and societies: House Captain and Senior Prefect involved
             with Football, Music and Charity Fundraising.
           </p>
-          <p>A Levels: Geography, Mathematics, Physics</p>
-          <p>AS Level: Art & Design</p>
         </div>
       </div>
     </>
