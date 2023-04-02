@@ -64,7 +64,7 @@ function Camera() {
 
 function StarryBackground() {
   const starRef = useRef();
-  const numStars = 8000;
+  const numStars = 5000;
   const starImages = [
     star1,
     star2,
