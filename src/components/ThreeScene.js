@@ -394,10 +394,10 @@ export default function ThreeScene() {
         <ambientLight intensity={0.5} />
         <pointLight position={[0, 0, 5]} />
         <StarryBackground />
-        <RedPlanet />
+        {/* <RedPlanet />
         <RedPlanetGlow />
         <YellowPlanet />
-        <YellowPlanetGlow />
+        <YellowPlanetGlow /> */}
         <LogoPlanet />
         <Planet />
         <PlanetGlow />
