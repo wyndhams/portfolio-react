@@ -141,129 +141,129 @@ function StarryBackground() {
   );
 }
 
-function RedPlanet() {
-  const fadedGlowRef = useRef();
+// function RedPlanet() {
+//   const fadedGlowRef = useRef();
 
-  useFrame(() => {
-    if (fadedGlowRef.current) {
-      fadedGlowRef.current.rotation.y += 0.1;
-    }
-  });
+//   useFrame(() => {
+//     if (fadedGlowRef.current) {
+//       fadedGlowRef.current.rotation.y += 0.1;
+//     }
+//   });
 
-  const fadedGlowGeometry = new SphereGeometry(0.3, 32, 32);
-  const fadedGlowMaterial = new MeshPhongMaterial({
-    color: 0xffb2b2,
-    shininess: 50,
-    transparent: true,
-    opacity: 1,
-  });
+//   const fadedGlowGeometry = new SphereGeometry(0.3, 32, 32);
+//   const fadedGlowMaterial = new MeshPhongMaterial({
+//     color: 0xffb2b2,
+//     shininess: 50,
+//     transparent: true,
+//     opacity: 1,
+//   });
 
-  const x = 3.5;
-  const y = 1;
-  const z = 0;
+//   const x = 3.5;
+//   const y = 1;
+//   const z = 0;
 
-  return (
-    <mesh
-      ref={fadedGlowRef}
-      geometry={fadedGlowGeometry}
-      material={fadedGlowMaterial}
-      position={[x, y, z]}
-    />
-  );
-}
+//   return (
+//     <mesh
+//       ref={fadedGlowRef}
+//       geometry={fadedGlowGeometry}
+//       material={fadedGlowMaterial}
+//       position={[x, y, z]}
+//     />
+//   );
+// }
 
-function RedPlanetGlow() {
-  const fadedGlowRef = useRef();
+// function RedPlanetGlow() {
+//   const fadedGlowRef = useRef();
 
-  useFrame(() => {
-    if (fadedGlowRef.current) {
-      fadedGlowRef.current.rotation.y += 0.1;
-    }
-  });
+//   useFrame(() => {
+//     if (fadedGlowRef.current) {
+//       fadedGlowRef.current.rotation.y += 0.1;
+//     }
+//   });
 
-  const fadedGlowGeometry = new SphereGeometry(0.5, 32, 32);
-  const fadedGlowMaterial = new MeshPhongMaterial({
-    color: 0xffb2b2,
-    shininess: 50,
-    transparent: true,
-    opacity: 0.15,
-  });
+//   const fadedGlowGeometry = new SphereGeometry(0.5, 32, 32);
+//   const fadedGlowMaterial = new MeshPhongMaterial({
+//     color: 0xffb2b2,
+//     shininess: 50,
+//     transparent: true,
+//     opacity: 0.15,
+//   });
 
-  const x = 3.5;
-  const y = 1;
-  const z = 0;
+//   const x = 3.5;
+//   const y = 1;
+//   const z = 0;
 
-  return (
-    <mesh
-      ref={fadedGlowRef}
-      geometry={fadedGlowGeometry}
-      material={fadedGlowMaterial}
-      position={[x, y, z]}
-    />
-  );
-}
+//   return (
+//     <mesh
+//       ref={fadedGlowRef}
+//       geometry={fadedGlowGeometry}
+//       material={fadedGlowMaterial}
+//       position={[x, y, z]}
+//     />
+//   );
+// }
 
-function YellowPlanet() {
-  const fadedGlowRef = useRef();
+// function YellowPlanet() {
+//   const fadedGlowRef = useRef();
 
-  useFrame(() => {
-    if (fadedGlowRef.current) {
-      fadedGlowRef.current.rotation.y += 0.1;
-    }
-  });
+//   useFrame(() => {
+//     if (fadedGlowRef.current) {
+//       fadedGlowRef.current.rotation.y += 0.1;
+//     }
+//   });
 
-  const fadedGlowGeometry = new SphereGeometry(0.3, 32, 32);
-  const fadedGlowMaterial = new MeshPhongMaterial({
-    color: 0xffe599,
-    shininess: 50,
-    transparent: true,
-    opacity: 1,
-  });
+//   const fadedGlowGeometry = new SphereGeometry(0.3, 32, 32);
+//   const fadedGlowMaterial = new MeshPhongMaterial({
+//     color: 0xffe599,
+//     shininess: 50,
+//     transparent: true,
+//     opacity: 1,
+//   });
 
-  const x = -3.5;
-  const y = -1;
-  const z = 0;
+//   const x = -3.5;
+//   const y = -1;
+//   const z = 0;
 
-  return (
-    <mesh
-      ref={fadedGlowRef}
-      geometry={fadedGlowGeometry}
-      material={fadedGlowMaterial}
-      position={[x, y, z]}
-    />
-  );
-}
+//   return (
+//     <mesh
+//       ref={fadedGlowRef}
+//       geometry={fadedGlowGeometry}
+//       material={fadedGlowMaterial}
+//       position={[x, y, z]}
+//     />
+//   );
+// }
 
-function YellowPlanetGlow() {
-  const fadedGlowRef = useRef();
+// function YellowPlanetGlow() {
+//   const fadedGlowRef = useRef();
 
-  useFrame(() => {
-    if (fadedGlowRef.current) {
-      fadedGlowRef.current.rotation.y += 0.1;
-    }
-  });
+//   useFrame(() => {
+//     if (fadedGlowRef.current) {
+//       fadedGlowRef.current.rotation.y += 0.1;
+//     }
+//   });
 
-  const fadedGlowGeometry = new SphereGeometry(0.5, 32, 32);
-  const fadedGlowMaterial = new MeshPhongMaterial({
-    color: 0xffe599,
-    shininess: 50,
-    transparent: true,
-    opacity: 0.15,
-  });
+//   const fadedGlowGeometry = new SphereGeometry(0.5, 32, 32);
+//   const fadedGlowMaterial = new MeshPhongMaterial({
+//     color: 0xffe599,
+//     shininess: 50,
+//     transparent: true,
+//     opacity: 0.15,
+//   });
 
-  const x = -3.5;
-  const y = -1;
-  const z = 0;
+//   const x = -3.5;
+//   const y = -1;
+//   const z = 0;
 
-  return (
-    <mesh
-      ref={fadedGlowRef}
-      geometry={fadedGlowGeometry}
-      material={fadedGlowMaterial}
-      position={[x, y, z]}
-    />
-  );
-}
+//   return (
+//     <mesh
+//       ref={fadedGlowRef}
+//       geometry={fadedGlowGeometry}
+//       material={fadedGlowMaterial}
+//       position={[x, y, z]}
+//     />
+//   );
+// }
 
 function LogoPlanet() {
   const logoPlanetRef = useRef();
