@@ -259,17 +259,24 @@ font-family: 'Zen Dots', cursive; */
     margin: 10px 20px;
   }
 
-  .project-wrapper, .project-wrapper-1 {
+  .project-wrapper,
+  .project-wrapper-1 {
     display: block;
     margin: 0;
   }
 
   .project-image {
     width: 80vw;
-    margin-top: 20px;
+    margin: 0;
   }
 
-.project-3, .project-4, .project-5 {
-  width: 80vw;
-}
+  .project {
+    margin: 10px 0px;
+  }
+
+  .project-3,
+  .project-4,
+  .project-5 {
+    width: 80vw;
+  }
 }
