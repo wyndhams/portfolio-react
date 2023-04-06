@@ -124,7 +124,7 @@ function Projects() {
           </div>
           <div className='project-wrapper-1'>
             <div className='project'>
-              <h2 id='title2'>React AJAX Request App</h2>
+              <h2 id='title2'>Pick A Year App</h2>
               <h4>
                 Timeframe: 3 days | Team of 2
                 <br />
@@ -285,7 +285,7 @@ function Projects() {
               className='project-image'
             />
             <div className='project-2'>
-              <h2 id='title2'>React AJAX Request App</h2>
+              <h2 id='title2'>Pick A Year App</h2>
               <h4>
                 Timeframe: 3 days | Team of 2
                 <br />
