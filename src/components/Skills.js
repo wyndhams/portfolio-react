@@ -151,43 +151,49 @@ export default function Skills() {
 
   return (
     <section className='skills' id='skills'>
-      <section className='frontend'>
+      <section className='skill-group'>
         <h1 className='skill-label'>Frontend</h1>
-        {frontendSkills.map((skill) => (
-          <div>
-            <img src={skill.image} alt={skill.name} className='img' />
-            <p sx={{ textAlign: 'center' }}>{skill.name}</p>
-          </div>
-        ))}
-      </section>
-      <section className='backend'>
-        <h1 className='skill-label'>Backend</h1>
-        {backendSkills.map((skill) => (
-          <div>
-            <img src={skill.image} alt={skill.name} className='img' />
-            <p sx={{ textAlign: 'center' }}>{skill.name}</p>
-          </div>
-        ))}
-      </section>
-      <section className='other-tech'>
-        <h1 className='skill-label'>Other Technologies</h1>
-        <div>
-          {otherTechnologies.map((skill) => (
-            <>
+        <div className='skill-images'>
+          {frontendSkills.map((skill) => (
+            <div className='skill-image-text'>
               <img src={skill.image} alt={skill.name} className='img' />
               <p sx={{ textAlign: 'center' }}>{skill.name}</p>
-            </>
+            </div>
           ))}
         </div>
       </section>
-      <section className='version'>
-        <h1 className='skill-label'>Version Control:</h1>
-        {versionControl.map((skill) => (
-          <div>
-            <img src={skill.image} alt={skill.name} className='img' />
-            <p sx={{ textAlign: 'center' }}>{skill.name}</p>
-          </div>
-        ))}
+      <section className='skill-group'>
+        <h1 className='skill-label'>Backend</h1>
+        <div className='skill-images'>
+          {backendSkills.map((skill) => (
+            <div className='skill-image-text'>
+              <img src={skill.image} alt={skill.name} className='img' />
+              <p sx={{ textAlign: 'center' }}>{skill.name}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className='skill-group'>
+        <h1 className='skill-label'>Other Technologies</h1>
+        <div className='skill-images'>
+          {otherTechnologies.map((skill) => (
+            <div className='skill-image-text'>
+              <img src={skill.image} alt={skill.name} className='img' />
+              <p sx={{ textAlign: 'center' }}>{skill.name}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className='skill-group'>
+        <h1 className='skill-label'>Version Control</h1>
+        <div className='skill-images'>
+          {versionControl.map((skill) => (
+            <div className='skill-image-text'>
+              <img src={skill.image} alt={skill.name} className='img' />
+              <p sx={{ textAlign: 'center' }}>{skill.name}</p>
+            </div>
+          ))}
+        </div>
       </section>
     </section>
   );

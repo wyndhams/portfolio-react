@@ -6,8 +6,8 @@ const Experience = () => {
   return (
     <>
       <h1 id='title'>Professional Experience</h1>
-      <div className='projects'>
-        <div className='project'>
+      <div className='project-wrapper'>
+        <div className='project-3'>
           <h2 id='title2'>Mott MacDonald</h2>
           <div className='logo'>
             <a href='https://www.mottmac.com/' target='_blank' rel='noreferrer'>
@@ -82,7 +82,7 @@ const Experience = () => {
             </li> */}
           </ul>
         </div>
-        <div className='project'>
+        <div className='project-3'>
           <h2 id='title2'>Ridge & Partners</h2>
           <div className='logo'>
             <a href='https://ridge.co.uk/' target='_blank' rel='noreferrer'>
@@ -94,12 +94,12 @@ const Experience = () => {
             </a>
           </div>
           <h4>Civil Engineer | London | 2018 - 2019</h4>
-          <h5>
+          <p>
             Lead Civil Engineering consultant on multi-disciplinary £95 million
             Jaguar Land Rover scheme with BIM requirement. Preparation of fee
             proposals for own projects and as part of wider submissions.
             Management of resourcing and invoicing on a number of projects.
-          </h5>
+          </p>
           <h4>Graduate Civil Engineer | Winchester | 2015 - 2017</h4>
           <ul>
             <p>Drainage Design</p>

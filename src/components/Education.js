@@ -4,32 +4,24 @@ const Education = () => {
   return (
     <>
       <h1 id='title'>Education</h1>
-      <div className='projects'>
-        <div className='project'>
+      <div className='project-wrapper'>
+        <div className='project-4'>
           <h2 id='title2'>General Assembly</h2>
           <h4>
             Software Engineering Immersive Course, Computer Software Engineering
           </h4>
           <h5>October 2022 - February 2023</h5>
           {/* <p>
-            The course was conducted over Zoom with 37.5 contact hours and 25+
-            hours of additional working time per week. The initial weeks of the
-            course built upon my knowledge of HTML, CSS and JavaScript which
-            acted as a strong foundation for development of full-stack
-            applications in later weeks, working solo and in groups. I built and
-            deployed applications working to tight deadlines using the MERN
-            stack and also developed using Python/Django REST Framework and
-            PostgreSQL. I took part in daily standups to discuss issues and plan
-            work for the forthcoming day/week.
-          </p> */}
-          <p>
             Frontend: Bulma, Chrome Dev Tools, CSS, HTML, JavaScript, Material
-            UI, React, Sass, SCSS <br /> Backend: Django, Express, MongoDB,
-            Mongoose, Node.js, Python, PostgreSQL <br /> Package: npm, pip,
-            pipenv <br /> Storage: Cloudinary, Heroku, Netlify Software: VSCode,
+            UI, React, Sass, SCSS <br />
+            <br /> Backend: Django, Express, MongoDB, Mongoose, Node.js, Python,
+            PostgreSQL <br />
+            <br /> Package: npm, pip, pipenv <br />
+            <br /> Storage: Cloudinary, Heroku, Netlify Software: VSCode,
             Postman, TablePlus <br />
+            <br />
             Version Control: Git, GitHub
-          </p>
+          </p> */}
           <p>
             The course was conducted over Zoom with 37.5 contact hours and 25+
             hours of additional working time per week. The initial weeks of the
@@ -50,7 +42,7 @@ const Education = () => {
             React.js · JavaScript
           </p> */}
         </div>
-        <div className='project'>
+        <div className='project-4'>
           <h2 id='title2'>Cardiff University</h2>
           <h4>
             First Class Honours, Master of Engineering (MEng), Civil and
@@ -77,7 +69,7 @@ const Education = () => {
           <h5>Programming Skills</h5>
           <p>C++, MATLAB</p>
         </div>
-        <div className='project'>
+        <div className='project-4'>
           <h2 id='title2'>St. Bartholomew's School</h2>
           <h4>A Levels: Geography, Mathematics, Physics</h4>
           <h4>AS Level: Art & Design</h4>

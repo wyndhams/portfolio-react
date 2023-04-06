@@ -4,8 +4,8 @@ const Interests = () => {
   return (
     <>
       <h1 id='title'>Interests</h1>
-      <div className='projects'>
-        <div className='project'>
+      <div className='project-wrapper'>
+        <div className='project-5'>
           <h2 id='title2'>Blockchain</h2>
           <h5>
             Researching the sector since 2018 and actively investing in it for
@@ -14,6 +14,8 @@ const Interests = () => {
             Contemporary Gallery on an upcoming Generative Art exhibition which
             aims to launch in 2024.
           </h5>
+        </div>
+        <div className='project-5'>
           <h2 id='title2'>Charity</h2>
           <h5>
             I organise a fundraising event called ‘therefore’ which hosts events
@@ -22,6 +24,8 @@ const Interests = () => {
             Place, a charity that provides advice and support to those with
             mental health issues.
           </h5>
+        </div>
+        <div className='project-5'>
           <h2 id='title2'>Music</h2>
           <h5>
             Passionate about music, vinyl collecting and DJing, and occasionally
@@ -31,6 +35,8 @@ const Interests = () => {
             release music as an independent record label and build digital
             applications for the music industry.
           </h5>
+        </div>
+        <div className='project-5'>
           <h2 id='title2'>Sport</h2>
           <h5>
             Played football to a good standard for 13 years and showed
