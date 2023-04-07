@@ -283,7 +283,7 @@ font-family: 'Zen Dots', cursive; */
 
 @media screen and (max-width: 768px) {
   .threejs-scene {
-    margin-top: -26px;
+    margin-top: -24px;
   }
   #home-title {
   font-size: 28px;
