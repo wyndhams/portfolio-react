@@ -388,7 +388,7 @@ const handleArrowClick = () => {
 
 export default function ThreeScene() {
   return (
-    <>
+    <div className='threejs-scene'>
       <Canvas className='canvas' style={{ height: '100vh' }}>
         <Camera />
         <ambientLight intensity={0.5} />
@@ -438,6 +438,6 @@ export default function ThreeScene() {
         <h2 id='home-title2'>Software Engineer</h2>
       </div>
       <Arrow onClick={handleArrowClick} />
-    </>
+    </div>
   );
 }
