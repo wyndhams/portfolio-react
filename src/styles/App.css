@@ -121,7 +121,7 @@ a {
 
 .logo-home:hover {
   /* background-color: rgb(214, 221, 255); */
-  box-shadow: 2px 1px 2px 1px black;
+  box-shadow: 2.5px 1.5px 2px 1px black;
 }
 
 #git-logo:hover {
