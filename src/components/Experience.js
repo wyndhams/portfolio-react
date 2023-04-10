@@ -11,7 +11,11 @@ const Experience = () => {
           <h2 id='title2'>Mott MacDonald</h2>
           <div className='logo'>
             <a href='https://www.mottmac.com/' target='_blank' rel='noreferrer'>
-              <img src={MottsLogo} alt='Mott MacDonald Icon' className='logo' />
+              <img
+                src={MottsLogo}
+                alt='Mott MacDonald Icon'
+                id='logo-company'
+              />
             </a>
           </div>
           <h4>Civil Engineer | London | 2019 - 2022</h4>
@@ -89,7 +93,7 @@ const Experience = () => {
               <img
                 src={RidgeLogo}
                 alt='Ridge & Partners LLP Icon'
-                className='logo'
+                id='logo-company'
               />
             </a>
           </div>

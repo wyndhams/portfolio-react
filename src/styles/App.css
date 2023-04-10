@@ -100,6 +100,14 @@ a {
   transition: box-shadow 0.4s ease-out 100ms;
 }
 
+#logo-company {
+  margin: 0px 8px;
+  padding: 8px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
 .logo-wrapper {
   display: flex;
   margin-top: -1.5vh;
