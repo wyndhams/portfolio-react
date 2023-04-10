@@ -262,7 +262,7 @@ a {
 font-family: 'Kanit', sans-serif;
 font-family: 'Zen Dots', cursive; */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1048px) {
     .threejs-scene {
     margin-top: -42px;
   }
