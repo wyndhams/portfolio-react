@@ -258,10 +258,6 @@ a {
   flex-wrap: wrap;
 }
 
-/* font-family: 'Gruppo', cursive;
-font-family: 'Kanit', sans-serif;
-font-family: 'Zen Dots', cursive; */
-
 @media only screen and (max-width: 1200px) {
     .threejs-scene {
     margin-top: -24px;
@@ -314,5 +310,11 @@ font-family: 'Zen Dots', cursive; */
 @media screen and (max-width: 768px) {
   #home-title {
     font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+    .threejs-scene {
+    margin-top: 24px;
   }
 }
