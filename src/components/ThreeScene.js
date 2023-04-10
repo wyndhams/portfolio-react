@@ -417,6 +417,7 @@ export default function ThreeScene() {
           alignItems: 'center',
           zindex: 1,
         }}
+        className='title-info'
       >
         <div className='logo-wrapper'>
           <a
