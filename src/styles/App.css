@@ -263,6 +263,10 @@ font-family: 'Kanit', sans-serif;
 font-family: 'Zen Dots', cursive; */
 
 @media only screen and (max-width: 992px) {
+    .threejs-scene {
+    margin-top: -42px;
+  }
+
   .body {
     color: white;
     display: flex;
