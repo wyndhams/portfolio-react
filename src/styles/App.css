@@ -260,13 +260,13 @@ a {
 
 @media only screen and (min-width: 1200px) {
     .threejs-scene {
-    margin-top: 32px;
+    margin-top: 16px;
   }
 }
 
 @media only screen and (max-width: 1200px) {
     .threejs-scene {
-    margin-top: -32px;
+    margin-top: -40px;
   }
 
   .body {
