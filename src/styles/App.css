@@ -262,7 +262,7 @@ a {
 font-family: 'Kanit', sans-serif;
 font-family: 'Zen Dots', cursive; */
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1000px) {
     .threejs-scene {
     margin-top: -42px;
   }
@@ -279,7 +279,7 @@ font-family: 'Zen Dots', cursive; */
   }
 
   .skills {
-    width: 90vw;
+    width: 92vw;
     margin-top: 20px;
   }
 

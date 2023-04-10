@@ -19,8 +19,7 @@ const About = () => {
           software practices, and am eager to develop this further within a new
           field of work. I am seeking a role in which I have the support of a
           mentor to develop my existing skill set and learn new relevant
-          technical skills for the industry. I am excited to make a positive
-          impact in a new organisation.
+          technical skills for the industry.
         </p>
       </div>
     </>

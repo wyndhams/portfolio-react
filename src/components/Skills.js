@@ -174,7 +174,7 @@ export default function Skills() {
         </div>
       </section>
       <section className='skill-group'>
-        <h1 className='skill-label'>Other Technologies</h1>
+        <h1 className='skill-label'>Other</h1>
         <div className='skill-images'>
           {otherTechnologies.map((skill) => (
             <div className='skill-image-text'>
