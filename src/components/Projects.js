@@ -14,8 +14,10 @@ function Projects() {
             <div className='project'>
               <h2 id='title2'>Festi App</h2>
               <h4>
-                Timeframe: 1 Week | Solo | Python, Django, PostgreSQL, React,
-                Material UI, CSS
+                Timeframe: 1 Week | Solo
+                <br />
+                Languages & Frameworks: Python, Django, React, HTML, CSS,
+                PostgreSQL, Material UI
               </h4>
               <a
                 href='https://festi-front-end.netlify.app/'
@@ -88,7 +90,7 @@ function Projects() {
               <h4>
                 Timeframe: 5 days | Team of 3
                 <br />
-                Languages: MERN Stack, Material UI, CSS
+                Languages & Frameworks: MERN Stack, Material UI, CSS
               </h4>
               <a
                 href='https://wyndhams-project-3-frontend.netlify.app/'
@@ -128,7 +130,7 @@ function Projects() {
               <h4>
                 Timeframe: 3 days | Team of 2
                 <br />
-                Languages: React, Material UI, CSS
+                Languages & Frameworks: React, Material UI, CSS
               </h4>
               <a
                 href='https://wyndhams-ga-project-2.netlify.app/'
@@ -170,8 +172,8 @@ function Projects() {
               <h4>
                 Timeframe: 1 Week | Solo
                 <br />
-                Languages: Python, Django, React, HTML, CSS, PostgreSQL,
-                Material UI
+                Languages & Frameworks: Python, Django, React, HTML, CSS,
+                PostgreSQL, Material UI
               </h4>
               <a
                 href='https://festi-front-end.netlify.app/'
@@ -244,7 +246,7 @@ function Projects() {
               <h4>
                 Timeframe: 5 days | Team of 3
                 <br />
-                Languages: MERN Stack, HTML, CSS, Material UI
+                Languages & Frameworks: MERN Stack, HTML, CSS, Material UI
               </h4>
               <a
                 href='https://wyndhams-project-3-frontend.netlify.app/'
@@ -289,7 +291,7 @@ function Projects() {
               <h4>
                 Timeframe: 3 days | Team of 2
                 <br />
-                Languages: React, HTML, CSS, Sass
+                Languages & Frameworks: React, HTML, CSS, Sass
               </h4>
               <a
                 href='https://wyndhams-ga-project-2.netlify.app/'
