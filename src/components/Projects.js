@@ -41,6 +41,11 @@ function Projects() {
                 project using Django as a backend framework for api routing and
                 used PostGreSQL to create the database of festivals. I developed
                 a React frontend application with Material UI for styling.
+                <br />
+                When accessing be advised that the search functionality has not
+                been completed and is therefore not working.
+                <br />
+                Please feel free to create an account and navigate the site!
               </p>
               {/* <img src="" alt="" /> */}
             </div>
@@ -197,6 +202,11 @@ function Projects() {
                 project using Django as a backend framework for api routing and
                 used PostGreSQL to create the database of festivals. I developed
                 a React frontend application with Material UI for styling.
+                <br />
+                When accessing be advised that the search functionality has not
+                been completed and is therefore not working.
+                <br />
+                Please feel free to create an account and navigate the site!
               </p>
               {/* <img src="" alt="" /> */}
             </div>
