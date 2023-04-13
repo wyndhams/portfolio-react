@@ -42,10 +42,13 @@ function Projects() {
                 used PostGreSQL to create the database of festivals. I developed
                 a React frontend application with Material UI for styling.
                 <br />
+                <br />
                 When accessing be advised that the search functionality has not
                 been completed and is therefore not working.
                 <br />
+                <br />
                 Please feel free to create an account and navigate the site!
+                Password min 8 chars letters and numbers.
               </p>
               {/* <img src="" alt="" /> */}
             </div>
@@ -203,10 +206,13 @@ function Projects() {
                 used PostGreSQL to create the database of festivals. I developed
                 a React frontend application with Material UI for styling.
                 <br />
+                <br />
                 When accessing be advised that the search functionality has not
                 been completed and is therefore not working.
                 <br />
+                <br />
                 Please feel free to create an account and navigate the site!
+                Password min 8 chars letters and numbers.
               </p>
               {/* <img src="" alt="" /> */}
             </div>
